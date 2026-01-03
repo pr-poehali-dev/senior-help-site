@@ -389,7 +389,7 @@ export default function Index() {
                     <img 
                       src={helper.photo} 
                       alt={helper.name}
-                      className="w-20 h-20 rounded-full border-4 border-peach-200"
+                      className="w-20 h-20 rounded-xl object-cover border-4 border-peach-200"
                     />
                     <div className="flex-1">
                       <h3 className="font-bold text-lg text-gray-800 mb-1">{helper.name}</h3>
