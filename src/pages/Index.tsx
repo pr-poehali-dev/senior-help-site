@@ -16,6 +16,7 @@ interface Helper {
   price: number;
   availability: string[];
   experience: string;
+  schedule: string;
 }
 
 const mockHelpers: Helper[] = [
@@ -29,7 +30,8 @@ const mockHelpers: Helper[] = [
     reviews: 23,
     price: 300,
     availability: ["Пн", "Вт", "Ср", "Чт", "Пт"],
-    experience: "1 год"
+    experience: "1 год",
+    schedule: "Будни: 15:00-18:30"
   },
   {
     id: 2,
@@ -41,7 +43,8 @@ const mockHelpers: Helper[] = [
     reviews: 18,
     price: 300,
     availability: ["Пн", "Вт", "Ср", "Чт", "Пт"],
-    experience: "6 месяцев"
+    experience: "6 месяцев",
+    schedule: "Будни: 15:00-18:30"
   },
   {
     id: 3,
@@ -53,7 +56,8 @@ const mockHelpers: Helper[] = [
     reviews: 31,
     price: 250,
     availability: ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"],
-    experience: "1 год"
+    experience: "1 год",
+    schedule: "Будни: 15:00-18:30 | Выходные: 9:00-18:00"
   },
   {
     id: 4,
@@ -65,7 +69,8 @@ const mockHelpers: Helper[] = [
     reviews: 15,
     price: 280,
     availability: ["Пн", "Вт", "Ср", "Чт", "Пт"],
-    experience: "8 месяцев"
+    experience: "8 месяцев",
+    schedule: "Будни: 16:00-18:30"
   },
   {
     id: 5,
@@ -77,7 +82,8 @@ const mockHelpers: Helper[] = [
     reviews: 27,
     price: 280,
     availability: ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"],
-    experience: "6 месяцев"
+    experience: "6 месяцев",
+    schedule: "Будни: 9:30-11:00 | Выходные: 9:00-18:00"
   },
   {
     id: 6,
@@ -89,7 +95,8 @@ const mockHelpers: Helper[] = [
     reviews: 12,
     price: 280,
     availability: ["Пн", "Вт", "Ср", "Чт", "Пт"],
-    experience: "1 год"
+    experience: "1 год",
+    schedule: "Будни: 15:00-18:30"
   },
   {
     id: 7,
@@ -101,7 +108,8 @@ const mockHelpers: Helper[] = [
     reviews: 19,
     price: 320,
     availability: ["Пн", "Вт", "Ср", "Чт", "Пт"],
-    experience: "1 год"
+    experience: "1 год",
+    schedule: "Будни: 15:00-18:30"
   },
   {
     id: 8,
@@ -113,7 +121,8 @@ const mockHelpers: Helper[] = [
     reviews: 14,
     price: 300,
     availability: ["Пн", "Вт", "Ср", "Чт", "Пт"],
-    experience: "1.5 года"
+    experience: "1.5 года",
+    schedule: "Будни: 14:00-18:30"
   },
   {
     id: 9,
@@ -125,7 +134,8 @@ const mockHelpers: Helper[] = [
     reviews: 35,
     price: 350,
     availability: ["Пн", "Вт", "Ср", "Чт", "Пт"],
-    experience: "2 года"
+    experience: "2 года",
+    schedule: "Будни: 17:00-18:30"
   }
 ];
 
