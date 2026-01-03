@@ -140,14 +140,26 @@ const mockHelpers: Helper[] = [
 ];
 
 const services = [
-  { name: "Покупки", icon: "ShoppingBag", description: "Продуктовый магазин, аптека" },
-  { name: "Уборка", icon: "Sparkles", description: "Помощь по дому" },
-  { name: "Прогулки", icon: "Trees", description: "Сопровождение на улице" },
-  { name: "Техподдержка", icon: "Smartphone", description: "Помощь с гаджетами" },
-  { name: "Общение", icon: "MessageCircle", description: "Приятная беседа" },
-  { name: "Готовка", icon: "CookingPot", description: "Приготовление еды" },
-  { name: "Документы", icon: "FileText", description: "Помощь с бумагами" },
-  { name: "Ремонт", icon: "Wrench", description: "Мелкий бытовой ремонт" }
+  { name: "Доставка", icon: "Package", description: "Еда, медикаменты", price: "200₽" },
+  { name: "Уборка", icon: "Sparkles", description: "Пол, пыль, стирка, глажка", price: "600₽" },
+  { name: "Уход 2в1", icon: "Shirt", description: "Стирка, глажка", price: "300₽" },
+  { name: "Приготовление еды", icon: "CookingPot", description: "Готовка блюд", price: "200₽" },
+  { name: "Сопровождение", icon: "Users", description: "Поддержка в поездках", price: "400₽" },
+  { name: "Вынос мусора", icon: "Trash2", description: "Вывоз отходов", price: "100₽" },
+  { name: "Покос травы", icon: "Trees", description: "Уход за участком", price: "300₽" },
+  { name: "Уход за огородом", icon: "Sprout", description: "Прополка 2в1", price: "400₽" },
+  { name: "Мелкий ремонт", icon: "Wrench", description: "Бытовые работы", price: "от 300₽" },
+  { name: "Обучение ПК", icon: "Laptop", description: "Работа с компьютером", price: "300₽" },
+  { name: "Настройка техники", icon: "Smartphone", description: "Гаджеты и устройства", price: "200₽" },
+  { name: "Складывание дров", icon: "Box", description: "Организация хранения", price: "2000₽/машина" },
+  { name: "Сборка мебели", icon: "Hammer", description: "Монтаж конструкций", price: "400₽" },
+  { name: "Помощь в ремонте", icon: "HardHat", description: "Строительные работы", price: "от 500₽" },
+  { name: "Чистый снег", icon: "Snowflake", description: "Уборка территории", price: "500₽" },
+  { name: "Перевозка вещей", icon: "Truck", description: "Транспортировка", price: "500₽" },
+  { name: "Абонемент недельный", icon: "Calendar", description: "7 дней помощи", price: "1500₽" },
+  { name: "Абонемент месячный", icon: "CalendarDays", description: "30 дней помощи", price: "3500₽" },
+  { name: "Распилка дров", icon: "Axe", description: "Заготовка топлива", price: "2500₽/машина" },
+  { name: "Починка техники", icon: "Settings", description: "Ремонт устройств", price: "от 500₽" }
 ];
 
 const reviews = [
@@ -244,24 +256,27 @@ export default function Index() {
           <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white rounded-2xl p-6 shadow-lg">
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Icon name="Users" className="text-green-600" size={32} />
+                <Icon name="Clock" className="text-green-600" size={32} />
               </div>
-              <h3 className="text-3xl font-bold text-gray-800 mb-2">150+</h3>
-              <p className="text-gray-600">Активных помощников</p>
+              <h3 className="text-2xl font-bold text-gray-800 mb-2">Будни</h3>
+              <p className="text-gray-600">9:30-11:00, перерыв</p>
+              <p className="text-gray-600">15:00-18:30</p>
             </div>
             <div className="bg-white rounded-2xl p-6 shadow-lg">
               <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Icon name="Star" className="text-purple-600" size={32} />
+                <Icon name="Calendar" className="text-purple-600" size={32} />
               </div>
-              <h3 className="text-3xl font-bold text-gray-800 mb-2">4.8</h3>
-              <p className="text-gray-600">Средний рейтинг</p>
+              <h3 className="text-2xl font-bold text-gray-800 mb-2">Выходные</h3>
+              <p className="text-gray-600">9:00-18:00</p>
+              <p className="text-gray-600">без перерыва</p>
             </div>
             <div className="bg-white rounded-2xl p-6 shadow-lg">
               <div className="w-16 h-16 bg-peach-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Icon name="Heart" className="text-peach-600" size={32} />
+                <Icon name="Users" className="text-peach-600" size={32} />
               </div>
-              <h3 className="text-3xl font-bold text-gray-800 mb-2">2000+</h3>
-              <p className="text-gray-600">Выполненных заказов</p>
+              <h3 className="text-2xl font-bold text-gray-800 mb-2">9 помощников</h3>
+              <p className="text-gray-600">Готовы помочь</p>
+              <p className="text-gray-600">прямо сейчас</p>
             </div>
           </div>
         </div>
@@ -273,7 +288,7 @@ export default function Index() {
           <p className="text-center text-gray-600 mb-12 text-lg">
             Широкий спектр помощи в повседневных делах
           </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {services.map((service) => (
               <Card key={service.name} className="hover:shadow-xl transition-all hover:-translate-y-1 cursor-pointer border-2 border-transparent hover:border-peach-300">
                 <CardContent className="p-6 text-center">
@@ -281,7 +296,8 @@ export default function Index() {
                     <Icon name={service.icon as any} className="text-peach-600" size={32} />
                   </div>
                   <h3 className="font-bold text-gray-800 mb-2">{service.name}</h3>
-                  <p className="text-sm text-gray-600">{service.description}</p>
+                  <p className="text-sm text-gray-600 mb-3">{service.description}</p>
+                  <p className="text-lg font-bold text-peach-600">{service.price}</p>
                 </CardContent>
               </Card>
             ))}
