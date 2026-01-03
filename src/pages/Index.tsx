@@ -30,7 +30,7 @@ const mockHelpers: Helper[] = [
     reviews: 23,
     price: 300,
     availability: ["Пн", "Вт", "Ср", "Чт", "Пт"],
-    experience: "1 год",
+    experience: "",
     schedule: "Будни: 15:00-18:30"
   },
   {
@@ -43,7 +43,7 @@ const mockHelpers: Helper[] = [
     reviews: 18,
     price: 300,
     availability: ["Пн", "Вт", "Ср", "Чт", "Пт"],
-    experience: "6 месяцев",
+    experience: "",
     schedule: "Будни: 15:00-18:30"
   },
   {
@@ -56,7 +56,7 @@ const mockHelpers: Helper[] = [
     reviews: 31,
     price: 250,
     availability: ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"],
-    experience: "1 год",
+    experience: "",
     schedule: "Будни: 15:00-18:30 | Выходные: 9:00-18:00"
   },
   {
@@ -69,7 +69,7 @@ const mockHelpers: Helper[] = [
     reviews: 15,
     price: 280,
     availability: ["Пн", "Вт", "Ср", "Чт", "Пт"],
-    experience: "8 месяцев",
+    experience: "",
     schedule: "Будни: 16:00-18:30"
   },
   {
@@ -82,7 +82,7 @@ const mockHelpers: Helper[] = [
     reviews: 27,
     price: 280,
     availability: ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"],
-    experience: "6 месяцев",
+    experience: "",
     schedule: "Будни: 9:30-11:00 | Выходные: 9:00-18:00"
   },
   {
@@ -95,7 +95,7 @@ const mockHelpers: Helper[] = [
     reviews: 12,
     price: 280,
     availability: ["Пн", "Вт", "Ср", "Чт", "Пт"],
-    experience: "1 год",
+    experience: "",
     schedule: "Будни: 15:00-18:30"
   },
   {
@@ -108,7 +108,7 @@ const mockHelpers: Helper[] = [
     reviews: 19,
     price: 320,
     availability: ["Пн", "Вт", "Ср", "Чт", "Пт"],
-    experience: "1 год",
+    experience: "",
     schedule: "Будни: 15:00-18:30"
   },
   {
@@ -121,7 +121,7 @@ const mockHelpers: Helper[] = [
     reviews: 14,
     price: 300,
     availability: ["Пн", "Вт", "Ср", "Чт", "Пт"],
-    experience: "1.5 года",
+    experience: "",
     schedule: "Будни: 14:00-18:30"
   },
   {
@@ -134,7 +134,7 @@ const mockHelpers: Helper[] = [
     reviews: 35,
     price: 350,
     availability: ["Пн", "Вт", "Ср", "Чт", "Пт"],
-    experience: "2 года",
+    experience: "",
     schedule: "Будни: 17:00-18:30"
   }
 ];
@@ -399,11 +399,11 @@ export default function Index() {
                     <img 
                       src={helper.photo} 
                       alt={helper.name}
-                      className="w-20 h-20 rounded-xl object-cover border-4 border-peach-200"
+                      className="w-20 h-20 rounded-xl object-cover object-top border-4 border-peach-200"
                     />
                     <div className="flex-1">
                       <h3 className="font-bold text-lg text-gray-800 mb-1">{helper.name}</h3>
-                      <p className="text-sm text-gray-600 mb-2">{helper.age} лет • {helper.experience}</p>
+                      <p className="text-sm text-gray-600 mb-2">{helper.age} лет</p>
                       <div className="flex items-center gap-2">
                         <div className="flex items-center gap-1">
                           <Icon name="Star" className="text-yellow-500 fill-yellow-500" size={16} />
