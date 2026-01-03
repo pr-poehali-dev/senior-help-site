@@ -6,7 +6,7 @@ export default {
 		"./pages/**/*.{ts,tsx}",
 		"./components/**/*.{ts,tsx}",
 		"./app/**/*.{ts,tsx}",
-		"./src/**/*.{ts,tsx}",
+		"./src/**/*.{ts,tsx}"
 	],
 	prefix: "",
 	theme: {
@@ -61,6 +61,42 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				peach: {
+					'50': '#FEF7F3',
+					'100': '#FDE1D3',
+					'200': '#FEC6A1',
+					'300': '#FCA67C',
+					'400': '#FA8A5F',
+					'500': '#F97316',
+					'600': '#E85D0D',
+					'700': '#C7490A',
+					'800': '#A53908',
+					'900': '#842D06'
+				},
+				purple: {
+					'50': '#F6F5FF',
+					'100': '#E5DEFF',
+					'200': '#D6BCFA',
+					'300': '#C4A0F4',
+					'400': '#B284EE',
+					'500': '#9B87F5',
+					'600': '#7E69AB',
+					'700': '#6E59A5',
+					'800': '#5D4A8C',
+					'900': '#4C3B73'
+				},
+				green: {
+					'50': '#F2FCE2',
+					'100': '#E3F9C5',
+					'200': '#C7F38B',
+					'300': '#ABEC51',
+					'400': '#8FE617',
+					'500': '#73CC00',
+					'600': '#5CA300',
+					'700': '#457A00',
+					'800': '#2E5200',
+					'900': '#172900'
 				}
 			},
 			borderRadius: {
